@@ -6,8 +6,6 @@
 Stop wasting CI minutes.  
 Make Docker builds **2–5x faster** with built-in caching and production-grade defaults.
 
-![GitHub release](https://img.shields.io/github/v/release/anantacloud-actions/setup-buildx-action)
-![CI](https://github.com/anantacloud-actions/setup-buildx-action/actions/workflows/ci.yml/badge.svg)
 ![License](https://img.shields.io/github/license/anantacloud-actions/setup-buildx-action)
 ![Build Speed](https://img.shields.io/badge/builds-2--5x%20faster-brightgreen)
 ![Caching](https://img.shields.io/badge/cache-GHA%20%7C%20Registry%20%7C%20Local-blueviolet)
