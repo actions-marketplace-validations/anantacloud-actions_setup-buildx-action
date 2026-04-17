@@ -1,0 +1,31 @@
+{
+  "name": "setup-buildx-action",
+  "version": "1.0.0",
+  "description": "Production-grade Docker Buildx GitHub Action with caching (GHA, registry, local)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -o dist && ncc build src/post.js -o dist",
+    "lint": "echo 'add eslint if needed'",
+    "test": "echo 'add tests'"
+  },
+  "keywords": [
+    "github-action",
+    "docker",
+    "buildx",
+    "ci-cd",
+    "caching",
+    "multi-arch"
+  ],
+  "author": "Ananta Cloud",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.11.0",
+    "@actions/exec": "^1.1.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
