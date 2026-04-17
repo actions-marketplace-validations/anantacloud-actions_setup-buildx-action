@@ -1,0 +1,40 @@
+name: 'Setup Docker Buildx (Advanced)'
+description: 'Production-grade Docker Buildx with full caching (GHA, registry, local)'
+author: 'Ananta Cloud'
+
+branding:
+  icon: 'layers'
+  color: 'blue'
+
+inputs:
+  name:
+    default: 'builder'
+  driver:
+    default: 'docker-container'
+  platforms:
+    description: 'Target platforms'
+  qemu:
+    default: 'true'
+  use:
+    default: 'true'
+  install:
+    default: 'true'
+  cleanup:
+    default: 'false'
+  cache-type:
+    description: 'gha | registry | local'
+    default: 'gha'
+  cache-from:
+    description: 'Custom cache-from override'
+  cache-to:
+    description: 'Custom cache-to override'
+  cache-image:
+    description: 'Registry cache image (required for registry)'
+  cache-dir:
+    description: 'Local cache directory'
+    default: '/tmp/.buildx-cache'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+  post: 'dist/post.js'
