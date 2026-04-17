@@ -1,7 +1,16 @@
 # 🚀 Setup Docker Buildx (Advanced)
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7cbe0967-9bcd-4f4e-86ab-d55c44af9a79" />
+
 Stop wasting CI minutes.  
 Make Docker builds **2–5x faster** with built-in caching and production-grade defaults.
+
+![GitHub release](https://img.shields.io/github/v/release/anantacloud-actions/setup-buildx-action)
+![CI](https://github.com/anantacloud-actions/setup-buildx-action/actions/workflows/ci.yml/badge.svg)
+![License](https://img.shields.io/github/license/anantacloud-actions/setup-buildx-action)
+![Build Speed](https://img.shields.io/badge/builds-2--5x%20faster-brightgreen)
+![Caching](https://img.shields.io/badge/cache-GHA%20%7C%20Registry%20%7C%20Local-blueviolet)
+![GitHub stars](https://img.shields.io/github/stars/anantacloud-actions/setup-buildx-action?style=social)
 
 ---
 
@@ -47,20 +56,20 @@ This action is designed for **real-world pipelines**:
 ## 🔁 Caching Strategies
 
 ### 🧠 GHA Cache (Recommended)
-```- uses: your-org/setup-buildx-action@v1
+```- uses: anantacloud-actions/setup-buildx-action@v1
   with:
     cache-type: gha
 ```
 
 ### 📦 Registry Cache (Team Sharing)
-```- uses: your-org/setup-buildx-action@v1
+```- uses: anantacloud-actions/setup-buildx-action@v1
   with:
     cache-type: registry
     cache-image: myrepo/buildx-cache:latest
 ```
 
 ### 💾 Local Cache (Self-hosted runners)
-```- uses: your-org/setup-buildx-action@v1
+```- uses: anantacloud-actions/setup-buildx-action@v1
   with:
     cache-type: local
     cache-dir: /tmp/.buildx-cache
@@ -86,7 +95,7 @@ Typical improvements:
 
 ## 🤝 Contributing
 ```
-git clone https://github.com/your-org/setup-buildx-action
+git clone https://github.com/anantacloud-actions/setup-buildx-action
 cd setup-buildx-action
 npm install
 npm run build
