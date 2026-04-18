@@ -37,6 +37,16 @@ This action is designed for **real-world pipelines**:
 
 ---
 
+## 🎬 See It In Action (30 sec)
+
+<p align="center">
+  <img src="docs/buildx.gif" width="800" alt="Setup Buildx Demo"/>
+  <br/>
+  <em>Advanced Way To Setup Docker Buildx 🚀</em>
+</p>
+
+---
+
 ## 📦 Basic Usage
 
 ```yaml
